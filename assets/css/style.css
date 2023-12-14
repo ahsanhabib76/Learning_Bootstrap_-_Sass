@@ -467,7 +467,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  --webkit-appearance: button;
+  -webkit-appearance: button;
 }
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -517,7 +517,7 @@ legend + * {
   height: auto;
 }
 [type="search"] {
-  --webkit-appearance: textfield;
+  -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 ::-webkit-search-decoration {
@@ -528,7 +528,7 @@ legend + * {
 }
 ::file-selector-button {
   font: inherit;
-  --webkit-appearance: button;
+  -webkit-appearance: button;
 }
 output {
   display: inline-block;
@@ -11921,4 +11921,99 @@ fieldset:disabled .btn {
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
+}
+.footer {
+  padding: 1rem;
+  background: #151414;
+}
+.contactBox {
+  position: relative;
+}
+.contactBox__icon {
+  width: 2rem;
+  stroke: #9926f0;
+  padding-top: 0.5rem;
+}
+@media (min-width: 576px) {
+  .contactBox__icon {
+    width: 4rem;
+  }
+}
+.contactBox__info {
+  padding: 0.4rem;
+  font-weight: 600;
+}
+.contactBox__info--title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.contactBox__info--title:hover {
+  color: #9926f0;
+  transition: 0.5s;
+}
+@media (min-width: 576px) {
+  .contactBox__info--title {
+    font-size: 1.4rem;
+  }
+}
+.contactBox__info--subTitle {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+@media (min-width: 576px) {
+  .contactBox__info--subTitle {
+    font-size: 1rem;
+  }
+}
+.footer-sm a {
+  color: #fff;
+}
+.footer-sm a i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.footer-sm a i:hover {
+  color: #9926f0;
+  transition: 0.5s;
+}
+@media (min-width: 576px) {
+  .footer-sm a i {
+    font-size: 1.6rem;
+  }
+}
+.campany-list {
+  display: block;
+  list-style: none;
+  position: relative;
+}
+.campany-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.campany-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+.campany-list li a:hover {
+  color: #9926f0;
+  transition: 0.5s;
+}
+.footer-bottom {
+  width: 100%;
+  background-color: #000;
+}
+.footer-bottom__copyrights {
+  color: #6c757d;
+  font-weight: 400;
+}
+.footer-bottom__copyrights a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+.footer-bottom__copyrights a:hover {
+  color: #9926f0;
+  transform: 0.4s;
+  text-decoration: underline;
 }
